@@ -1,0 +1,38 @@
+.header-container {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.navbar-right h2 {
+    font-weight: 200;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.navbar-left h1 {
+    padding-left: 30px;
+}
+
+#my-logo {
+    height: 70px;
+    width: 70px;
+    padding: 20px;
+}
+
+h1 {
+}
