@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif; 
+}
+
 .header-container {
     display: flex;
     background-color: black;
@@ -25,7 +29,8 @@
 }
 
 .navbar-left h1 {
-    padding-left: 30px;
+    padding-left: 20px;
+    border-left: dotted 3px white;
 }
 
 #my-logo {
@@ -34,5 +39,122 @@
     padding: 20px;
 }
 
-h1 {
+.about-container {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+#my-photo {
+    width: 500px;
+    height: 500px;
+    padding: 100px 150px;
+    border-radius: 50%;
+}
+
+.about-info {
+    padding-top: 150px;
+    padding-right: 100px;
+}
+
+.about-info h3 {
+    font-size: 90px;
+    margin: 0px;
+    border-bottom: solid 5px rgb(250, 208, 0);
+}
+
+.about-info b {
+    color: rgb(250, 208, 0);
+}
+
+.work-container {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    background-color: rgb(244, 244, 244);
+}
+
+.work-info {
+    width: 600px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.work-info h3 {
+    font-size: 90px;
+    margin: 0px;
+    border-bottom: solid 5px rgb(250, 208, 0);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 150px 150px;
+    grid-gap: 20px;
+    grid-template-areas: "shareflix shareflix";
+    padding-left: 50px;
+}
+
+.grid-item {
+    border: 1px solid black;
+}
+
+.grid-item-1 {
+    grid-area: shareflix;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background-image: url(./Images/Netflix-background.jpg);
+    background-size: 600px 300px;
+}
+
+.item-1-text {
+    background-color: rgba(250, 208, 0);
+    padding: 10px;
+    color: white;
+    height: 40px;
+}
+
+.item-1-text h5 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item-2-text, .item-3-text, .item-4-text, .item-5-text {
+    background-color: rgba(250, 208, 0);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* grid item backgrounds */
+.grid-item-2 {
+    background-image: url(./Images/etchasketch-background.jpg);
+    background-size: 300px 150px;
+}
+
+.grid-item-3 {
+    background-image: url(./Images/ghibli-bg.jpg);
+    background-size: 300px 150px;
+}
+
+.grid-item-4 {
+    background-image: url(./Images/tandoori-background.jpg);
+    background-size: 300px 150px;
+}
+
+.grid-item-5 {
+    background-image: url(./Images/Calculator-background.png);
+    background-size: 300px 150px;
 }
