@@ -2,6 +2,21 @@
     font-family: 'Roboto', sans-serif; 
 }
 
+/* test code*/
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 1700px;
+}
+
+/* test code*/
+
 .header-container {
     display: flex;
     background-color: black;
@@ -62,6 +77,10 @@
     border-bottom: solid 5px rgb(250, 208, 0);
 }
 
+.about-info p {
+    font-size: 25px;
+}
+
 .about-info b {
     color: rgb(250, 208, 0);
 }
@@ -83,6 +102,10 @@
     font-size: 90px;
     margin: 0px;
     border-bottom: solid 5px rgb(250, 208, 0);
+}
+
+.work-info {
+    font-size: 25px;
 }
 
 .work-grid {
@@ -157,4 +180,55 @@
 .grid-item-5 {
     background-image: url(./Images/Calculator-background.png);
     background-size: 300px 150px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px;
+    padding-right: 100px;
+}
+
+.contact-container h3 {
+    font-size: 90px;
+    margin: 0px;
+    border-bottom: solid 5px rgb(250, 208, 0);
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.contact-info img {
+    height: 40px;
+    width: 40px;
+}
+
+.icon img {
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon {
+    border-right: dotted black 1px;
+    padding-right: 30px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
