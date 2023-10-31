@@ -57,17 +57,22 @@ body {
 .about-container {
     display: flex;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #my-photo {
     width: 500px;
     height: 500px;
-    padding: 100px 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     border-radius: 50%;
 }
 
 .about-info {
-    padding-top: 150px;
+    
     padding-right: 100px;
 }
 
@@ -231,4 +236,20 @@ footer {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100vh;
+    }
+
+    .header-container, .about-container, .work-container, .contact-container, footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .contact-info {
+    justify-content: flex-start;
+   }
 }
